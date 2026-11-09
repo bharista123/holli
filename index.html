@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodGo - Your Favorite Food, Just a Tap Away!</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-utensils logo-icon"></i>
+                Food<span>Go</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#why-us" class="nav-link">Why Choose Us?</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#menu" class="nav-link">Popular Dishes</a>
+                <a href="#download" class="nav-link">Download App</a>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge">🔥 50% Off On First Order</span>
+                <h1>Your Favorite <span>Food</span>,<br>Just a Tap Away!</h1>
+                <p>Browse top-rated restaurants and get your favorite dishes delivered hot and fresh in minutes.</p>
+                <a href="#menu" class="btn btn-primary">Order Now</a>
+            </div>
+            <div class="hero-image">
+                <!-- Replace src with actual graphics or mobile mockups -->
+                <img src="3 screen.jpeg" alt="FoodGo Mobile App">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section (Chill At Home) -->
+    <section class="features" id="why-us">
+        <div class="container">
+            <div class="section-title">
+                <span class="sub-badge">Why Choose Us</span>
+                <h2>Chill At Home<br>We Will Take Care</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <img src="fast.jpeg" alt="easy to order">
+                    </div>
+                    <h3>Easy to Order</h3>
+                    <p>Just a few taps and your food is on its way. Simple, fast, and satisfying.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-motorcycle"></i>
+                        <img src="car.jpeg" alt="fast delivery">
+                    </div>
+                    <h3>Fastest Delivery</h3>
+                    <p>We deliver piping hot meals in record time — no more waiting around.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-award"></i>
+                        <img src="quality.jpeg" alt="top ranked">
+                    </div>
+                    <h3>Best Quality</h3>
+                    <p>Partnered with top-rated kitchens to bring you only fresh, delicious food.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="overlay"></div>
+        <div class="container relative">
+            <div class="section-title light">
+                <span class="sub-badge">How It Works</span>
+                <h2>Hungry?<br>Here's the Plan</h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Browse & Choose</h3>
+                    <p>Explore thousands of recipes, dishes, and cuisines from your local favorite places.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Place Your Order</h3>
+                    <p>Select your favorite food, customize options, and pay safely with just one click.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Track & Enjoy</h3>
+                    <p>Track your order live from kitchen to doorstep and enjoy delicious meal hot!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section (Taste What Everyone's Craving) -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-title">
+                <span class="sub-badge">Popular Dishes</span>
+                <h2>Taste What Everyone's Craving</h2>
+            </div>
+
+            <!-- Categories Tabs -->
+            <div class="menu-categories">
+                <button class="category-btn active" data-filter="all">All</button>
+                <button class="category-btn" data-filter="indian">Indian</button>
+                <button class="category-btn" data-filter="italian">Italian</button>
+                <button class="category-btn" data-filter="chinese">Chinese</button>
+                <button class="category-btn" data-filter="ghanaian">Ghanaian</button>
+                <button class="category-btn" data-filter="healthy">Healthy</button>
+            </div>
+
+            <!-- Food Grid -->
+            <div class="menu-grid">
+                <div class="food-card" data-category="indian">
+                    <div class="food-img">
+                        <img src="d4.jpeg" alt="Biryani">
+                    </div>
+                    <h4>Nawab Biryani</h4>
+                    <span class="food-tag">Indian</span>
+                </div>
+
+                <div class="food-card" data-category="italian">
+                    <div class="food-img">
+                        <img src="pizza.jpeg" alt="Margherita Pizza">
+                    </div>
+                    <h4>Margherita Pizza</h4>
+                    <span class="food-tag">Italian</span>
+                </div>
+
+                <div class="food-card" data-category="chinese">
+                    <div class="food-img">
+                        <img src="hakka.jpeg" alt="Veg Hakka Noodles">
+                    </div>
+                    <h4>Veg Hakka Noodles</h4>
+                    <span class="food-tag">Chinese</span>
+                </div>
+
+                <div class="food-card" data-category="ghanaian">
+                    <div class="food-img">
+                        <img src="okro.jpeg" alt="Banku with Okra stew">
+                    </div>
+                    <h4>Banku with Okra stew</h4>
+                    <span class="food-tag">Ghanaian</span>
+                </div>
+
+                <div class="food-card" data-category="healthy">
+                    <div class="food-img">
+                        <img src="salad.jpeg" alt="Salad">
+                    </div>
+                    <h4>Salad</h4>
+                    <span class="food-tag">Healthy</span>
+                </div>
+
+                <div class="food-card" data-category="indian">
+                    <div class="food-img">
+                        <img src="dal .jpeg" alt="Dal Makhani">
+                    </div>
+                    <h4>Dal Makhani</h4>
+                    <span class="food-tag">Indian</span>
+                </div>
+
+                <div class="food-card" data-category="italian">
+                    <div class="food-img">
+                        <img src="white sauce.jpeg" alt="White Sauce Pasta">
+                    </div>
+                    <h4>White Sauce Pasta</h4>
+                    <span class="food-tag">Italian</span>
+                </div>
+
+                <div class="food-card" data-category="ghanaian">
+                    <div class="food-img">
+                        <img src="tadi.jpeg" alt="Akple with Aborbotadi">
+                    </div>
+                    <h4>Akple with Aborbotadi</h4>
+                    <span class="food-tag">Ghanaian</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Download Section -->
+    <section class="download-app" id="download">
+        <div class="container app-container">
+            <div class="section-title left">
+                <span class="sub-badge">Download The App</span>
+                <h2>Real Food. Real Fast.<br>Just One App Away.</h2>
+            </div>
+            
+            <div class="app-display">
+                <img src="app screen.jpeg" alt="App Screen" class="app-mockup">
+            </div>
+
+            <div class="store-buttons">
+                <a href="#" class="store-btn">
+                    <i class="fa-brands fa-google-play"></i>
+                    <div>
+                        <small>GET IT ON</small>
+                        <span>Google Play</span>
+                    </div>
+                </a>
+                <a href="#" class="store-btn">
+                    <i class="fa-brands fa-apple"></i>
+                    <div>
+                        <small>Download on the</small>
+                        <span>App Store</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="logo light">
+                    <i class="fa-solid fa-utensils"></i> Food<span>Go</span>
+                </a>
+                <p>Delivering top favorite food from local markets to your home, when you need it.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#menu">Popular Dishes</a></li>
+                    <li><a href="#download">Download App</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-subscribe">
+                <h4>Subscribe</h4>
+                <form id="subscribe-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 FoodGo. MadeWith🩶🩶🩶.  All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
